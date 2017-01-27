@@ -25,13 +25,13 @@ class Dom
 		//Dom::Dom() {}
 		Dom::Dom (string kraj , string miasto, int rok_budowy, int cena, int ile_pokoji,int ile_m2, int typ)  // Konstruktor obiektów do klasy Dom 
 		{
-			string m_miasto = miasto;
-			string m_kraj = kraj;
-			int m_typ = typ;
-			int m_ile_m2 = ile_m2;
-			int m_ile_pokoji = ile_pokoji;
-			int m_cena = cena;
-			int m_rok_budowy = rok_budowy;
+			 m_miasto = miasto;
+			 m_kraj = kraj;
+			 m_typ = typ;
+			 m_ile_m2 = ile_m2;
+			 m_ile_pokoji = ile_pokoji;
+			 m_cena = cena;
+			 m_rok_budowy = rok_budowy;
 		}
 		void Dom::przegladanie()
 		{
@@ -143,6 +143,18 @@ int main()
 						//if ();
 					}
 				}
+				case '4':
+				{
+
+				}
+				case '5':
+				{
+					cout << "zamykanie programu \n"
+						<< "do widzienia\n";
+					Sleep(3000);
+					exit(0);
+				}
+
 
 				}
 			}
@@ -160,10 +172,11 @@ void w_menu()
 {
 	cout << "\n\n\n\n\n"
 		<< "\t\t\t\tWitaj w Bazie Mieszkan\n\n"
-		<< "\t\t\t\t1.dodaj do bazy"
-		<< "\t\t\t\t"
-		<< "\t\t\t\t"
-		<< "\t\t\t\t";
+		<< "\t\t\t\t1.dodaj do bazy\n"
+		<< "\t\t\t\t2.\n"
+		<< "\t\t\t\t3.Przegladanie bazy domow\n"
+		<< "\t\t\t\t4.\n"
+		<< "\t\t\t\t5.Zamknij Program\n";
 }
 
 void w_pod_menu()
